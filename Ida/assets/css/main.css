@@ -1955,7 +1955,7 @@
 	input[type="button"],
 	button,
 	.button {
-		background-color: #3498db;
+		background-color: #158336d7;
 		color: #fff !important;
 	}
 
@@ -1964,7 +1964,7 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #4aa3df;
+			background-color: #158336d7;
 		}
 
 		input[type="submit"]:active,
@@ -2934,7 +2934,7 @@
 			.wrapper.style1 input[type="button"],
 			.wrapper.style1 button,
 			.wrapper.style1 .button {
-				background-color: #3498db;
+				background-color: #158336d7;
 				color: #fff !important;
 			}
 
@@ -2943,7 +2943,7 @@
 				.wrapper.style1 input[type="button"]:hover,
 				.wrapper.style1 button:hover,
 				.wrapper.style1 .button:hover {
-					background-color: #4aa3df;
+					background-color: #158336d7;
 				}
 
 				.wrapper.style1 input[type="submit"]:active,
@@ -2951,7 +2951,7 @@
 				.wrapper.style1 input[type="button"]:active,
 				.wrapper.style1 button:active,
 				.wrapper.style1 .button:active {
-					background-color: #258cd1;
+					background-color: #158336d7;
 				}
 
 				.wrapper.style1 input[type="submit"].alt,
@@ -3100,8 +3100,8 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #3498db;
-			color: #aed6f1;
+			background-color: #158336d7;
+			color: #ffffff;
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -3147,7 +3147,7 @@
 			.wrapper.style2 button,
 			.wrapper.style2 .button {
 				background-color: #fff;
-				color: #3498db !important;
+				color: #000000!important;
 			}
 
 				.wrapper.style2 input[type="submit"].alt,
@@ -3260,23 +3260,23 @@
 			}
 
 			.wrapper.style2 ::-webkit-input-placeholder {
-				color: #67b2e4 !important;
+				color: #158336d7 !important;
 			}
 
 			.wrapper.style2 :-moz-placeholder {
-				color: #67b2e4 !important;
+				color: #158336d7 !important;
 			}
 
 			.wrapper.style2 ::-moz-placeholder {
-				color: #67b2e4 !important;
+				color: #158336d7 !important;
 			}
 
 			.wrapper.style2 :-ms-input-placeholder {
-				color: #67b2e4 !important;
+				color: #158336d7!important;
 			}
 
 			.wrapper.style2 .formerize-placeholder {
-				color: #67b2e4 !important;
+				color: #158336d7!important;
 			}
 
 			.wrapper.style2 ul.alt li {
@@ -3284,7 +3284,7 @@
 			}
 
 			.wrapper.style2 header p {
-				color: #67b2e4;
+				color: #158336d7;
 			}
 
 			.wrapper.style2 table tbody tr {
@@ -3312,7 +3312,7 @@
 			}
 
 			.wrapper.style2 .image {
-				box-shadow: 0px 0px 0px 7px #3498db, 0px 0px 0px 8px rgba(255, 255, 255, 0.25);
+				box-shadow: 0px 0px 0px 7px #ffffff, 0px 0px 0px 8px rgba(255, 255, 255, 0.25);
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -3420,17 +3420,17 @@
 
 			#header > .logo a {
 				font-size: 1.25em;
-				color: #3498db;
+				color: #158336d7;
 			}
 
 				#header > .logo a:hover {
-					color: #3498db;
+					color: #ffffff;
 				}
 
 			#header > .logo span {
 				font-weight: 300;
 				font-size: .8em;
-				color: #FFF;
+				color: #158336d7;
 			}
 
 		#header > a {
@@ -3446,7 +3446,7 @@
 		}
 
 			#header > a:hover {
-				color: #3498db;
+				color: #158336d7;
 			}
 
 			#header > a[href="#menu"] {
@@ -3606,7 +3606,7 @@
 					}
 
 					#menu > ul.links > li:hover {
-						color: #3498db;
+						color: #158336d7;
 					}
 
 					#menu > ul.links > li:first-child > a:not(.button) {
@@ -3650,7 +3650,7 @@
 			}
 
 			#menu .close:hover {
-				color: #3498db;
+				color: #158336d7;
 			}
 
 			@media screen and (max-width: 736px) {
