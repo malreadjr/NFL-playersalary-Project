@@ -10,7 +10,7 @@ var myMap = L.map("map", {
     maxZoom: 18,
     zoomOffset: -1,
     id: "mapbox/streets-v11",
-    accessToken: AIzaSyDWmZ77GI-kTa6gvPF1wiGytdpYzL9Po3w
+    accessToken: API_KEY
   }).addTo(myMap);
   
   var newtry = "https://data.sfgov.org/resource/cuks-n6tp.json?$limit=1000";

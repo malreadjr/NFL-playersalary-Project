@@ -1,6 +1,6 @@
 var myMap = L.map("map", {
-    center: [37.7749, -122.4194],
-    zoom: 13
+    center: [39.8283, -98.5795],
+    zoom: 4.4
   });
   
   L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
@@ -9,7 +9,7 @@ var myMap = L.map("map", {
     maxZoom: 18,
     zoomOffset: -1,
     id: "mapbox/streets-v11",
-    accessToken: AIzaSyDWmZ77GI-kTa6gvPF1wiGytdpYzL9Po3w
+    accessToken: API_KEY
   }).addTo(myMap);
   
   var url = "https://data.sfgov.org/resource/cuks-n6tp.json?$limit=10000";
