@@ -11,6 +11,8 @@ from flask import (
     request,
     redirect)
 
+from config import URI
+
 #################################################
 # Flask Setup
 #################################################
@@ -30,13 +32,8 @@ from flask_sqlalchemy import SQLAlchemy
 
 # db = SQLAlchemy(app)
 
-engine = create_engine("sqlite:///nflDB.db")
+engine = create_engine(URI)
 
-Base = automap_base()
-
-Base.prepare(engine, reflect=True)
-
-Positions = Base.classes.positions
 
 # results = session.query(Positions.position, Positions.offenseDefense).all()
 
@@ -50,24 +47,24 @@ def home():
 @app.route("/api/salaries")
 def salaries():
 
-    session = Session(engine)
-
-    results = session.query(Positions.position, Positions.offenseDefense).all()
+    results = engine.execute('''select * from rosters''')
     
 
     # hover_text = [result[1] for result in results]
     # year = [result[0] for result in results]
     # salary = [result[1] for result in results]
 
-    position_data = []
+    salary_data = []
 
-    for position, ofdf in results:
-        pos_dict = {}
-        pos_dict['position'] = position
-        pos_dict['offenseDefense'] = ofdf
-        position_data.append(pos_dict)
+    for team, player, year, salary in results:
+        salary_dict = {}
+        salary_dict['team'] = team
+        salary_dict['player'] = player
+        salary_dict['year'] = year
+        salary_dict['salary'] = salary
+        salary_data.append(salary_dict)
 
-    return jsonify(position_data)
+    return jsonify(salary_data)
 
 
 if __name__ == "__main__":
